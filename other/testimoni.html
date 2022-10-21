@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="testimoni.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="main">
+        <img src="../img/navbar.png" alt="" />
+      </div>
+      <div class="container">
+        <ul>
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="kelas.html">Kelas</a></li>
+          <li><a href="masuk.html">E-book</a></li>
+          <li class="more"><a href="masuk.html">Try Out & Daily Quiz</a></li>
+          <li><a href="testimoni.html">Testimoni</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li class="hide"></li>
+        </ul>
+
+        <div class="buttons">
+          <button class="masuk"><a href="masuk.html">Masuk</a></button>
+          <button class="daftar"><a href="daftar.html">Daftar</a></button>
+        </div>
+      </div>
+
+      <div class="menu-toggle">
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+      </div>
+    </nav>
+
+    <div class="header">
+      <p>Kata Alumni</p>
+      <h1><span>Meraih Masa Depan</span> Yang Gemilang</h1>
+    </div>
+
+    <div class="testimoni-container">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="../img/testimoni1.png" alt="" /></div>
+          <div class="swiper-slide"><img src="../img/testimoni2.png" alt="" /></div>
+          <div class="swiper-slide"><img src="../img/testimoni3.png" alt="" /></div>
+          <div class="swiper-slide"><img src="../img/testimoni4.png" alt="" /></div>
+          <div class="swiper-slide"><img src="../img/testimoni5.png" alt="" /></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay : {
+          delay: 2000, 
+          disableOnIteraction: false,
+        },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable:true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

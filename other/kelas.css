@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: max-content;
+}
+
+nav {
+  display: fixed;
+  top: 0;
+}
+
+.kelas-container {
+  margin-top: 6em;
+  padding: calc(2vmin + 3em);
+}
+
+.kelas-container h1 {
+  letter-spacing: 0.05em;
+  font-size: calc(1vmin + 1.8em);
+  color: rgb(57, 56, 56);
+}
+
+.kelas-container h1 span {
+  color: #1a71d4;
+}
+
+.kelas-container p {
+  color: rgb(69, 68, 68);
+  margin-top: 0.5em;
+  letter-spacing: 0.07em;
+  font-size: calc(0.8vmin + 0.5em);
+  font-weight: bolder;
+}
+
+.kelas-container p span {
+  color: #0a4c97;
+}
+
+.dapatkan {
+  padding-top: 0;
+  /* background-color: pink; */
+}
+
+.dapatkan .container .explanation {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .dapatkan .container {
+    flex-wrap: wrap;
+  }
+
+  .dapatkan .container .explanation {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .kelas-container {
+    padding: calc(1vmin + 1em);
+  }
+
+  .kelas-container h1 {
+    font-size: calc(1vmin + 0.8em);
+  }
+
+  .dapatkan .container .explanation {
+    margin-top: 1em;
+    width: 80%;
+  }
+}

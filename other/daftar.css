@@ -1,0 +1,224 @@
+nav {
+  display: fixed;
+  top: 0;
+}
+
+body {
+  height: max-content;
+}
+
+.container-masuk {
+  height: calc(600px + 30vmin);
+  display: flex;
+  margin-top: calc(3vmin + 6.5em);
+  padding: calc(2vmin + 4em);
+  padding-top: 0;
+}
+
+.container-masuk .one {
+  flex: 1;
+  background-color: #09468d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #555;
+}
+
+h1 {
+  font-size: calc(1vw + 1.5em);
+  margin-top: calc(0.5 * (1vw + 1.5em));
+  letter-spacing: 0.1em;
+}
+
+.container-masuk .one img {
+  width: 80%;
+}
+
+.container-masuk .two {
+  flex: 2;
+  background-color: white;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #555;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3em 0;
+  box-sizing: border-box;
+  letter-spacing: 0.05em;
+}
+
+.container-masuk .two h1 {
+  color: #0b51a0;
+  letter-spacing: 0.05em;
+  margin-top: 0.5em;
+}
+
+.container-masuk label {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.container-masuk label > * {
+  margin-top: 1em;
+}
+
+.container-masuk .two > div {
+  /* background-color: pink; */
+  width: 100%;
+}
+
+.container-masuk .below p {
+  color: red;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: calc(1vmin + 0.5em);
+}
+
+.container-masuk .two button {
+  border: none;
+  padding: 0.8em;
+  width: 15em;
+  background-color: #1a71d4;
+  color: white;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: calc(1vmin + 0.5em);
+}
+
+.container-masuk .two button.first {
+  width: 20em;
+}
+
+.container-masuk .two input {
+  height: 2em;
+  border: 1.5px solid #ccc;
+  padding-left: 0.5em;
+}
+
+.container-masuk .two button.last {
+  width: 15em;
+}
+
+.container-masuk .two img {
+  width: calc(2.5vmin + 3em);
+}
+
+.container-masuk > * {
+  margin: auto;
+  text-align: center;
+}
+
+.form {
+  margin: auto;
+  margin-top: -1em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(1vmin + 0.5em);
+}
+
+.form1 {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form1 > * {
+    /* background-color: pink; */
+    width: 47%;
+}
+
+.container-masuk .two .form img {
+  width: calc(1vmin + 0.5em);
+}
+
+@media (max-width: 1000px) {
+  .container-masuk {
+    padding: calc(1.5vmin + 1em);
+  }
+}
+
+@media (max-width: 768px) {
+  .container-masuk {
+    padding: calc(2vmin + 3em);
+    margin-top: calc(2.5vmin + 3em);
+  }
+
+  .container-masuk .one {
+    display: none;
+  }
+
+  .container-masuk .two button.first {
+    width: 20%;
+  }
+
+  .container-masuk .two button.last {
+    width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: calc(1em + 0.8vmin);
+  }
+
+  .container-masuk {
+    padding: calc(1vmin + 1em);
+    margin-top: calc(3vmin + 4em);
+  }
+
+  .container-masuk .two button.first {
+    width: 30%;
+  }
+
+  .container-masuk .two button.last {
+    width: 40%;
+  }
+
+  .form1 > * {
+    width: 100%;
+  }
+
+  .form label.nama {
+    order: 1;
+  }
+
+  .form input#nama{
+    order: 2;
+  }
+
+  .form label.lahir {
+    order: 3;
+  }
+
+  .form input#lahir {
+    order: 4;
+  }
+
+  .form label.asal {
+    order: 5;
+  }
+
+  .form input#asal {
+    order: 6;
+  }
+
+  .form label.email {
+    order: 7;
+  }
+
+  .form input#email {
+    order: 8;
+  }
+}
